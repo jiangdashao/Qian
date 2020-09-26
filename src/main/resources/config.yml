@@ -8,14 +8,22 @@
 #                    An Efficient and Simple Economic Plugin                     #
 #                                                                                #
 ##################################################################################
-name: Qian
-version: ${project.version}
-main: me.rerere.qian.Qian
-api-version: 1.16
-softdepend: [ Vault ]
-authors: [ RE ]
-description: An efficient and simple economic plugin
-commands:
-  qian:
-    description: Qian command
-    usage: /qian <args>
+
+# Database settings
+database:
+  # Choose the type of database you want to use
+  #
+  # h2    -  Store data as local files
+  # mysql -  Store data to Mysql database (Recommend)
+  type: h2
+
+  # Configure MySQL connection information
+  mysql:
+    address: 'localhost:3306'
+    user: 'root'
+    password: 'root'
+    database: 'economy'
+    table_prefix: 'qian_'
+
+# Economic setting
+economic:
