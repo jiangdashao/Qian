@@ -9,6 +9,9 @@
 #                                                                                #
 ##################################################################################
 
+# Language settings
+language: en_us
+
 # Database settings
 database:
   # Choose the type of database you want to use
