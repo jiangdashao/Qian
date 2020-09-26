@@ -1,0 +1,7 @@
+name: Qian
+version: ${project.version}
+main: me.rerere.qian.Qian
+api-version: 1.16
+softdepend: [ Vault ]
+authors: [ RE ]
+description: An efficient and simple economic plugin
