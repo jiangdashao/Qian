@@ -30,3 +30,9 @@ database:
 
 # Economic setting
 economic:
+  # Initial balance
+  initial_balance: 0
+
+  singular_name: dollar
+
+  plural_name: dollars
