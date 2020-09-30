@@ -1,7 +1,9 @@
 package me.rerere.qian;
 
 import lombok.Getter;
+import me.rerere.qian.commands.QianCommand;
 import me.rerere.qian.config.ConfigLoader;
+import me.rerere.qian.data.BalanceManager;
 import me.rerere.qian.database.DatabaseManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,6 +16,8 @@ public final class Qian extends JavaPlugin {
 
     private ConfigLoader configLoader;
     private DatabaseManager databaseManager;
+    private BalanceManager balanceManager;
+    private QianCommand commandHandler;
 
     @Override
     public void onEnable() {
@@ -26,6 +30,12 @@ public final class Qian extends JavaPlugin {
         // load database
         this.databaseManager = new DatabaseManager();
         this.databaseManager.init();
+
+        // load datamanager
+        this.balanceManager = new BalanceManager();
+
+        // load commands
+        this.commandHandler = new QianCommand();
     }
 
     @Override

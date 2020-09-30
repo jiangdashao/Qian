@@ -17,6 +17,8 @@ public interface IDatabase {
 
     Optional<PlayerEcoData> query(UUID uuid);
 
+    void insert(PlayerEcoData data);
+
     void update(PlayerEcoData data);
 
     void batchUpdate(Set<PlayerEcoData> dataSet);

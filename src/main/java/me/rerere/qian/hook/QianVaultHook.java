@@ -1,4 +1,4 @@
-package me.rerere.qian.hooker;
+package me.rerere.qian.hook;
 
 import me.rerere.qian.Qian;
 import net.milkbowl.vault.economy.AbstractEconomy;
@@ -6,7 +6,7 @@ import net.milkbowl.vault.economy.EconomyResponse;
 
 import java.util.List;
 
-public class QianVaultHooker extends AbstractEconomy {
+public class QianVaultHook extends AbstractEconomy {
     @Override
     public boolean isEnabled() {
         return Qian.getInstance().isEnabled();

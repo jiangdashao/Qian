@@ -10,7 +10,9 @@ public final class SQLs {
             "balance DOUBLE NOT NULL" +
             ")";
 
-    public static final String BALANCE_DATA_QUERY = "";
+    public static final String BALANCE_DATA_QUERY = "SELECT * FROM %s WHERE uuid=?";
 
-    public static final String BALANCE_DATA_UPDATE = "";
+    public static final String BALANCE_DATA_INSERT = "INSERT INTO %s(uuid, name, balance) VALUES(?,?,?)";
+
+    public static final String BALANCE_DATA_UPDATE = "UPDATE %s SET name=?,balance=? WHERE uuid=?";
 }

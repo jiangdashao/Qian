@@ -29,4 +29,7 @@ public class MainConfig {
 
     @YamlPath("database.mysql.table_prefix")
     private String mysqlTablePrefix;
+
+    @YamlPath("economic.initial_balance")
+    private double initialBalance;
 }
