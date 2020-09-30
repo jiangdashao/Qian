@@ -1,3 +1,4 @@
+![LOGO](https://file.matrix.rip/qian/pics/%E9%92%B1%E8%A2%8B.png)
 # QIAN
 QIAN(钱) is an efficient and concise economic plugin. It provides basic economic functions for your server.
 
@@ -30,4 +31,4 @@ If you are willing to help us translate too many languages, please submit a PR!
 If you will not submit a PR, you can send it to me in the Discord Server
 
 ## Donation
-PayPal: https://paypal.me/re755
+PayPal: https://paypal.me/matrixac
